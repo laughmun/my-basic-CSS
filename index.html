@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <!--การใช้ css-->
+    <section>
+        <p>Paragraph 1 tag p</p>
+        <div class="p01">
+            <p class="p01" >Paragraph 01 tag class , p</p>
+        </div>
+        <div id="p001">
+            <div  class="p01">
+                <p>Paragraph 001 tag id , class , p </p>
+            </div>
+        </div>
+    </section>
+    <!--เรียกใช้ css อันไหนก่อน-->
+    <section>
+        <style>
+            .important {
+                color: rgb(255, 0, 0) !important;
+            }
+        </style>
+        <p>Paragraph 1 external style</p>
+        <p style="color:blue">Paragraph 1 inline style</p>
+        <p class="important" style="color:blue">Paragraph 1 important but have inline style</p>
+        <p class="important" >Paragraph 1 important</p>
+
+    </section>
+    <!--background-->
+    <section>
+        <div class="background1"></div>
+        <div class="backgroundimg"></div>
+    </section>
+    <!--border-->
+    <section>
+        <div class="solidborder"></div>
+        <div class="dashedborder"></div>
+        <div class="dottedborder"></div>
+        <div class="borders"></div>
+    </section>
+    <!--margin-->
+    <section>
+        <div class="box">
+            <div class="margin"></div>
+        </div>
+        <div class="box">
+            <div class="marginTRBL"></div>
+        </div>
+        <div class="box">
+            <div class="marginleft"></div>
+        </div>
+        <div class="box">
+            <div class="marginright"></div>
+        </div>
+        <div class="box">
+            <div class="margintop"></div>
+        </div>
+        <div class="box">
+            <div class="marginbottom"></div>
+        </div>
+    </section>
+    <!--padding-->
+    <section>
+        <div class="padding">
+            <p>TestTest</p>
+        </div>
+        <div class="paddingTRBL">
+            <p>TestTest</p>
+        </div>
+        <div class="paddingtop">
+            <p>TestTest</p>
+        </div>
+
+        <div class="paddingright">
+            <p>TestTest</p>
+        </div>
+
+        <div class="paddingbottom">
+            <p>TestTest</p>
+        </div>
+
+        <div class="paddingleft">
+            <p>TestTest</p>
+        </div>
+    </section>
+    <!--width&height-->
+    <section>
+        <!--vhเป็น%ตามความสูงขนาดหน้าจอ-->
+        <!--vwเป็น%ตามความกว้างขนาดหน้าจอ-->
+        <div class="vhvw"></div>
+        <!--ptคือค่าfix-->
+        <div class="point" style="width: 20pt; height: 20pt; background-color: aqua;"></div>
+        <!--pxคือpixelของจอ-->
+        <div class="point" style="width: 20px; height: 20px; background-color: rgb(225, 0, 255);"></div>
+        <!--cmคือcentimeterในชีวิตจริง-->
+        <div class="point" style="width: 5cm; height: 5cm; background-color: rgb(0, 38, 255);"></div>
+        <!--maxwidth&maxheightจำกัดขนาดตามที่กำหนด-->
+    </section>
+    <!--outline-->
+    <section>
+        <!--เหมือนborderแต่overlapคือทับกับcontentอื่นได้-->
+        <!--outline offset คือการเว้นระยะของoutlineและcontent-->
+        <div class="outline1"></div>
+    </section>
+        <!--text-->
+        <section>
+            <!--justifyทำให้แต่ละบรรทัดมีจำนวนอักษรเท่ากัน-->
+            <div class="text1">
+                <p style="text-align: justify;">
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                </p>
+                <!--textdecorationคือการเพิ่มตัวประดับของtext-->
+                <p style="text-decoration:line-through;">
+                    This is text decoration
+                </p>
+                <!--texttransformคือการเปลี่ยนตัวพิมใหญ่พิมเล็ก-->                
+                <p style="text-transform:uppercase;">
+                    This is text transform
+                </p>
+                <!--letterspacing-->                
+                <p style="letter-spacing: 5px;">
+                    This is letter spacing
+                </p>
+                <!--lineheight--> 
+                <p style="line-height: 50px; ">
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                    This is Justify This is JustifyText This is JustifyText
+                </p>
+                <!--textshadow-->                
+                <p style="text-shadow: 2px 5px 7px rgb(0, 0, 0);">
+                    This is text-shadow
+                </p>                
+            </div>
+        </section>    
+    <!--font-->
+    <section>
+        <!--font size em เปลี่ยนแปลงตามfontของparent แต่ rem เปลี่ยนแปลงตามค่าเริ่มต้นของfont-->
+        <div class="font1">
+            <!--font family-->
+            <p style="font-family: Arial">
+                This is arial font
+            </p>
+            <!--font weight-->
+            <p style="font-weight: 700;">
+                This is font-weight 700
+            </p>
+            <!--font style-->
+            <p style="font-style: italic;">
+                This is font-style italic
+            </p>
+        </div>
+    </section>
+    <!--link-->
+    <section>
+        <div class="link">
+            <a href="#">test</a>
+        </div>
+    </section>
+    <!--list-->
+    <section>
+        <div class="list">
+            <ul>
+                <li>This is a list</li>
+                <li>This is a list</li>
+                <li>This is a list</li>
+                <li>This is a list</li>
+            </ul>
+        </div>
+    </section>
+    <!--display-->
+    <section>
+        <!--display none-->
+        <div class="displaynone"><p>ppp</p>></div>        
+        <!--display inline-->
+        <div class="displayinline">pp</div>
+        <!--display block-->
+        <div class="displayblock">ppp</div>
+        <!--display inline-block-->
+        <div class="displayinlineblock">
+            <div class="displaychild">ppp</div>
+            <div class="displaychild">ppp</div>
+        </div>
+        <!--display flex-->
+        <div class="displayflex">ppp</div>
+    </section>
+    <!--position-->
+    <section>
+        <div class="position">
+            <!--static แบบปกติ แก้ไขตำแหน่งไม่ได้-->
+            <div>A</div>
+            <!--absolute คือfixตำแหน่งตามที่กำหนดและoverlap (ควรใช้parent เป็น relative)-->
+            <div>B</div>
+            <!--relative คล้าย static แต่สามารถขยับตัวเองได้-->
+            <div>C</div>
+            <!--fixed fixตำแหน่ง ใช้กับ navbar ได้-->
+            <div>D</div>
+            <!--sticky ตามการเลื่อน scroll mouse เมื่อออกหน้าจอนั้น-->
+            <div>E</div>
+        </div>
+    </section>
+    <!--Overflow-->
+    <section>
+        <div class="overflow">
+            <div class="box"></div>
+        </div>
+    </section>
+    <!--Float margin ของ element หายไป เหลือแค่ตัวมันเอง-->
+    <section>
+        <div class="float">
+            <div class="normal"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </section>
+</body>
+</html>

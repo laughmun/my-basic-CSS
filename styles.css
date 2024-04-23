@@ -1,0 +1,271 @@
+/*comment in css*/
+section {
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 2%;
+    padding: 2%;
+}
+.box {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+}
+p {
+    color: rgb(76, 138, 5) ;
+}
+.p01 p {
+    color: rgb(4, 18, 216) !important;
+}
+#p001 .p01 p {
+    color: rgb(216, 32, 4) ;
+}
+
+.background1 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    margin-bottom: 1%;
+}
+.backgroundimg {
+    width: 100px;
+    height: 100px;
+    background-image: url("/images/deadpool.jpg");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+
+}
+
+.solidborder {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin-bottom: 1%;
+}
+.dashedborder {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed black;
+    margin-bottom: 1%;
+
+}
+.dottedborder {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted black;
+    margin-bottom: 1%;
+}
+.borders {
+    width: 100px;
+    height: 100px;
+    border-top: 5px solid black;
+    border-right: 5px dotted red;
+    border-bottom: 5px solid blue;
+    border-left: 5px dashed green
+}
+
+.margin {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 20px;
+}
+.marginTRBL {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 43, 186);
+    margin: 10px 20px 30px 40px;
+}
+.marginleft {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 43, 43);
+    margin-left: 20px;
+}
+.marginright {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(171, 226, 43);
+    margin-right: 20px;
+}
+.margintop {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 226, 119);
+    margin-top: 20px;
+}
+.marginbottom {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 70, 226);
+    margin-bottom: 20px;
+}
+
+.padding {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.paddingTRBL {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    padding: 10px 20px 30px 40px;
+}
+.paddingtop {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    padding-top: 10px;
+}
+.paddingright {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    padding-right: 10px;
+}
+.paddingbottom {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+}
+.paddingleft {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    padding-left : 10px;
+}
+
+.vhvw {
+    width: 50vw;
+    height: 50vh;
+    background-color: bisque;
+}
+
+.outline1 {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    outline: 5px double black;
+    outline-offset: 10px;
+}
+
+.text1 {
+    outline: 2px solid black;
+    padding: 5%;
+}
+
+.link a:link {
+    color: black;
+}
+.link a:visited {
+    color: blue;
+}
+.link a:active {
+    color: rgb(43, 226, 52);
+}
+.link a:hover {
+    color: red;
+}
+
+.list ul{
+    
+    background-color: aqua;
+    
+}
+.list ul li {
+    list-style-position: inside;
+    background-color: antiquewhite;
+    margin: 5px;
+}
+
+.displaynone {
+    height: 30px;
+    background-color: red;
+    display: none;
+}
+.displayinline {
+    height: 30px;
+    background-color: red;
+    display: inline;
+}
+.displayblock {
+    height: 30px;
+    background-color: red;
+    display: block;
+}
+.displayinlineblock {
+    display: inline-block;
+}
+.displaychild {
+    height: 30px;
+    background-color: rgb(68, 0, 255);
+}
+.displayflex {
+    height: 30px;
+    background-color: red;
+    display: flex;
+}
+
+.position{
+    position: relative;
+    height: 1000px;
+}
+.position div:first-child {
+    position: static;
+}
+.position div:nth-child(2) {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.position div:nth-child(3) {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.position div:nth-child(4) {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.position div:nth-child(5) {
+    position: sticky;
+    left: 0px;
+    top: 10px;
+}
+
+.overflow {
+    overflow: auto;
+    height: 300px;
+    overflow-y: hidden;
+}
+.overflow .box {
+    width: 100vw;
+    height: 1000px;
+    background-color: blue;
+}
+
+.float .left { 
+    float: left;
+    background-color: rgb(0, 153, 255);
+    width: 100px;
+    height: 100px;
+}
+.float .right {
+    float: right;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+.float .normal {
+    background-color: rgb(165, 42, 138);
+    width: 100px;
+    height: 100px;
+}
